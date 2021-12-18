@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-kasamu-dev-105520-authRole",
+      "UnauthRoleArn": "arn:aws:iam::951894031383:role/amplify-kasamu-dev-105520-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::951894031383:role/amplify-kasamu-dev-105520-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-kasamu-dev-105520-deployment",
+      "UnauthRoleName": "amplify-kasamu-dev-105520-unauthRole",
+      "StackName": "amplify-kasamu-dev-105520",
+      "StackId": "arn:aws:cloudformation:us-east-2:951894031383:stack/amplify-kasamu-dev-105520/0f7510f0-e3b8-11eb-8685-021611d0f3fe",
+      "AmplifyAppId": "d3rn98do91o4om"
+    },
+    "categories": {
+      "auth": {
+        "kasamua78324f1": {}
+      },
+      "function": {
+        "kasamua78324f1PostConfirmation": {
+          "deploymentBucketName": "amplify-kasamu-dev-105520-deployment",
+          "s3Key": "amplify-builds/kasamua78324f1PostConfirmation-34486958344b4c532f44-build.zip"
+        }
+      }
+    }
+  }
+}

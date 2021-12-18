@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "kasamu",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authkasamua78324f1",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

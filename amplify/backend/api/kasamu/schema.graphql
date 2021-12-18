@@ -1,0 +1,26 @@
+type User @model 
+  @auth (rules: [
+    { allow: groups, groups: ["Admin"] },
+    { allow: owner, ownerField: "username", operations: [read] }
+  ]) {
+  id: ID!
+  birth_country_code: String!
+  citizenship_country_code: String!
+  created: String!
+  default_country_code: String!
+  default_email: String!
+  default_langage_code: String!
+  default_phone_number: String!
+  default_postal_address: String!
+  default_region_name: String!
+  first_name: String!
+  last_name: String!
+  middle_name: String!
+  origin_country_code: String!
+  origin_region_name: String!
+  residence_country_code: String!
+  updated: String!
+  user_id: ID!
+  username: String!
+}
+

@@ -1,0 +1,55 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Parameters": {
+        "authkasamua78324f1UserPoolId": {
+            "Type": "String",
+            "Default": "authkasamua78324f1UserPoolId"
+        },
+        
+        "authkasamua78324f1AppClientID": {
+            "Type": "String",
+            "Default": "authkasamua78324f1AppClientID"
+        },
+        "authkasamua78324f1AppClientIDWeb": {
+            "Type": "String",
+            "Default": "authkasamua78324f1AppClientIDWeb"
+        },
+        "AuthRoleArn": {
+            "Type": "String"
+        },
+        "UnauthRoleArn": {
+            "Type": "String"
+        },
+        "env": {
+            "Type": "String"
+        }
+    },
+    "Conditions": {
+        "ShouldNotCreateEnvResources": {
+            "Fn::Equals": [
+                {
+                    "Ref": "env"
+                },
+                "NONE"
+            ]
+        }
+    },
+    "Resources": {
+    
+        "adminGroup": {
+          "Type" : "AWS::Cognito::UserPoolGroup",
+          "Properties" : {
+              "GroupName" : "admin",
+              "Precedence" : 1,
+              
+              "UserPoolId" : {
+                "Ref": "authkasamua78324f1UserPoolId"
+              }
+            }
+        },
+        
+    
+    
+    },
+    
+}
